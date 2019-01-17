@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<head>
+	<title>Testing javascript</title>
+	<style>
+	li{
+		display:inline;
+	}
+	h2{
+		border:10px solid black;
+		padding:8px;
+		font-size:25px;
+	}
+</style>
+
+</head>
+<body>
+	<center><pre><h2 id = "h1">Testing of javascript</pre</h2></center>
+	<br/><br/>
+	<center><ul>
+	<li><span style = "border:2px solid black;background-color:#dddddd;padding:15px;margin:10px"><button onclick = dis(1)>Show</span></button></li>
+	<li><span style = "border:2px solid black;background-color:#dddddd;padding:15px;margin:50px"><button onclick = dis(0)>Hide</span></button></li>
+	</ul></center>
+	<b><p id = "p01" style = "font-size:20px"></p></b>
+	<img style = "float:right;visibility:hidden" src = "none" alt = "Image not find" id = "img"/>
+	<script>
+		function dis(res){
+			if (res == 1)
+			{
+				document.getElementById("p01").innerHTML = "Hello javascript:";
+				document.getElementById("h1").style.backgroundColor = "red";
+				document.getElementById("h1").style.fontSize = "25px";
+				document.getElementById("img").src = "love.jpg";
+				document.getElementById("img").style.visibility = "visible";
+			}
+			if (res == 0)
+			{
+				document.getElementById("p01").innerHTML = "";
+				document.getElementById("h1").style.backgroundColor = "white";
+				document.getElementById("h1").style.fontSize = "25px";
+				document.getElementById("img").style.visibility = "hidden";
+			}
+		}
+
+	</script>
+	<noscript>Sorry your browser need to support javascript to run this web page!</noscript>
+</body>
+</html>
