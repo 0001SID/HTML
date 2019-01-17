@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            list
+        </title>
+        <style>
+        li.test{
+            display:inline;
+            border:1px solid gray;
+            padding:5px;
+            overflow:hidden;
+            background-color:white;
+        }
+    </style>
+    </head>
+    <body style = "background-color:#dddddd">
+        <h3><u>ORDERD LIST</u></h3>
+        <ol type = "A" start = "12">
+            <li>1st element</li>
+            <li>2nd element
+                <ul>
+                    <li>first</li>
+                    <li>second</li>
+                </ul>
+            </li>
+            <li>3rd element</li>
+        </ol>
+        <hr>
+        <h3><u>UNORDERERD LIST</u></h3>
+        <h3>Horizontal list:</h3>
+        <ul class = "test" style = "list-style-type:none">
+            <li class = "test">1st element</li>
+            <li class = "test">2nd element</li>
+            <li class = "test">3rd element</li>
+        </ul>
+        <br/>
+        <h3>Virtical list:</h3>
+        <ul>
+            <li><span style = "background-color:white">4th element</span></li>
+            <li><span style = "background-color:white">5th element</span></li>
+            <li><span style = "background-color:white">6th element</span></li>
+            </ul>
+        <hr/>
+        <h3><u>Description list</u></h3>
+        <dl>
+            <dt>WHO</dt>
+            <dd>World Health Organization</dd>
+            <dt>RAM</dt>
+            <dd>Random Access Memory</dd>
+        </dl>
+    </body>
+</html>

@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+<head>
+	<title>table</title>
+	<style>
+	table{
+		width:100%;
+		/*border-spacing:5px;*/
+	}
+	table,th,td{
+		border:1px solid #dddddd;
+		border-collapse:collapse;
+	}
+	td,th{
+		padding:10px;
+	}
+	tr:nth-child(odd){
+		background-color:#dddddd;
+		border:0
+	}
+	th{
+		background-color:black;
+		color:white;
+	}
+	</style>
+</head>
+<body>
+	<table>
+		<!-- <colgroup>
+			<col span = "3"/>
+			<col span = "2" style = "background-color:yellow;"
+		</colgroup> -->
+		<br/>
+		<center><u><b><captioon>Students Data</captioon></center></u></b>
+		<br/>
+		<tr>
+			<th>Name</th>
+			<th>Roll no.</th>
+			<th>Section</th>
+			<th colspan = "2">Mobile number</th>
+		</tr>
+		<tr>
+			<td>Suman Das</td>
+			<td>1822444</td>
+			<td>C2</td>
+			<td>7854213658</td>
+			<td>7852463256</td>
+		</tr>
+		<tr>
+			<td>Champa Barman</td>
+			<td>1822443</td>
+			<td>C2</td>
+			<td>7856532232</td>
+			<td>4585656965</td>
+		</tr>
+		<tr>
+			<td>Shubahm Jaiswal</td>
+			<td>1822337</td>
+			<td>C1</td>
+			<td>4587965845</td>
+			<td>4521369857</td>
+		</tr>
+		<tr>
+			<td>Ravendra Jaiswal</td>
+			<td>1822339</td>
+			<td>C1</td>
+			<td>5246325896</td>
+			<td>8754236598</td>
+		</tr>
+	</table>
+</body>
+</html>
