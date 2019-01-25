@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+<head>
+	<title>form testing</title>
+</head>
+<body>
+	<form action = "list.html" method = "post" target = "_blank" autocomplete = "on" id = "form1">
+		<fieldset>
+			<legend>Name</legend>
+		First Name:<br/>
+		<input type = "text" name = "first name" value = "Suman" list = "first" autofocus = "autofocus"/><br/>
+		Last Name:<br/>
+		<input type = "text" name = "last name" value = "Das" list = "last"/><br/><br/>
+		<datalist id = "first">
+			<option value = "suman">suman</option>
+			<option value = "ravendre">ravendre</option>
+			<option value = "champ">champ</option>
+		</datalist>
+		<datalist id = "last">
+			<option value = "das">das</option>
+			<option value = "jaiswal">jaiswal</option>
+			<option value = "barman">barman</option>
+		</datalist>
+	</fieldset>
+	<fieldset>
+		<legend>Gender</legend>
+		<input type = "radio" name = "gender" value = "male" checked = "checked"/>Male<br/>
+		<input type = "radio" name = "gender" value = "female"/>Female<br/>
+		<input type = "radio" name = "gender" value = "others"/>Others
+	</fieldset>
+	<br/>
+	<fieldset>
+		<legend>Programming language</legend>
+		<p>Select your language:</p>
+	<select name = "languages"style = "height:30px;width:100px;background-color:white;font-family:courier;font-size:18px">
+		<option value = "c">c</option>
+		<option value = "c++" selected = "selected">c++</option>
+		<option value = "html">html</option>
+		<option value = "java">java</option>
+	</select>
+</fieldset>
+<br/>
+	<textarea name = "message" style = "width:300px;height:200px;border:2px solid black">This is a place where you can type any text</textarea>
+
+	<br/><br/>
+		<input type = "submit" value = "submit"/>
+		<fieldset>
+			<legend>Testing anotherer input attributes</legend>
+			Type any date here<br/>
+			<input type = "date" name = "date" min = "2017-01-01" max = "2018-12-31"/><br/>
+			Type any time here:<br/>
+			<input type = "time" name = "time"/><br/>
+			Type any mobile number here:<br/>
+			<input type = "tel" name = "telnmbr" required = "required"/><br/>
+			Type any month here:<br/>
+			<input type = "month" name = "month"/><br/>
+			Type any time and date here:<br/>
+			<input type = "datetime-local" name = "datetime"/><br/>
+			Type any url here:<br/>
+			<input type = "url" name = "url"/><br/>
+			Type any email here:<br/>
+			<input type = "email" name = "email"/><br/>
+			Type password here:<br/>
+			<input type = "password" name = "pass" placeholder = "Enter a strong password"/><br/>
+			Type any week here:<br/>
+			<input type = "week" name = "week"/><br/>
+			Type any number here from range 1 to 10:<br/>
+			<input type = "number" name = "number" min = "1" max = "10"/><br/>
+			Search anytheing here:<br/>
+			<input type = "search" name = "search"/><br/>
+			Enter any color here:<br/>
+			<input type = "color" name = "color" value="#dddddd" /><br/>
+			This is a ranging input:<br/>
+			<input type = "range" name = "range" min = "1" max = "20"/><br/>
+			This is a rest button:<br/>
+			<input type = "reset" name ="rest" value = "Reset all"/><br/>
+			This is a submit button:<br/>
+			<input type = "submit" name = "submit" value = "Submit all"/><br/>
+			Submit with no validation:<br/>
+			<input type = "submit" name = "submit" value = "na validation" formnovalidate = "formnovalidate"/><br/>
+			Submit in new tab:<br/>
+			<input type = "submit" name = "submit" value = "new tab" formtarget = "_blank"/><br/>
+			Submit in another page:<br/>
+			<input type = "submit" name = "new page submissioin" value = "new page submission" formaction = "table.html"/><br/>
+			Submit in another method:<br/>
+			<input type = "submit" name = "submit" value = "another method" formmethod = "get"/><br/>
+
+		</fieldset>
+	</form>
+	<p>This is  an another field outside of the form but linked with the form:</p>
+	<input type = "text" name = "name" required = "required" form = "form1" placeholder = "Enter anyhting in this field"/>
+</body>
+</html>
