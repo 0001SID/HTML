@@ -2,15 +2,21 @@
 <html>
 <head>
 	<title>viewport testing</title>
+	<meta name = "viewport" content = "width = device-width,initial-scale = 1.0"/>
 	<style>
 	p{
 		font-size:20px;
 
 	}
+	@media only screen and (max-width:600px){
+		body{
+			background-color:red;
+		}
+	}
 </style>
 </head>
 <body>
-	<img src = "https://images.pexels.com/photos/887349/pexels-photo-887349.jpeg?cs=srgb&dl=abstract-art-color-887349.jpg&fm=jpg" alt = "image not available" style = "width:50%;height:auto"/>
+	<img src = "https://images.pexels.com/photos/887349/pexels-photo-887349.jpeg?cs=srgb&dl=abstract-art-color-887349.jpg&fm=jpg" alt = "image not available" style = "max-width:365px;height:auto"/>
 	<p>This is a paragraph which is here to just check that the image is coming on the upper side or not.If this is in right side in all the condition then the code is workig perfectly</p>
 </body>
 </html>
